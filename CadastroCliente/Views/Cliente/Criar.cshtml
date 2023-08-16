@@ -1,4 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Insere Cliente";
 }
+
 <h1>INSERIR NOVO CLIENTE</h1>
+<form class="row g-3">
+  <div class="col-auto">
+   <input class="form-control form-control-lg" type="text" placeholder="Nome Completo" aria-label=".form-control-lg example">
+ 
+   <input class="form-control" type="text" placeholder="Email" aria-label="default input example">
+
+  <input class="form-control form-control-sm" type="text" placeholder="Digite seu Telefone" aria-label=".form-control-sm example">
+  <div class="col-auto">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Coloque sua senha">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Confirmar Clinte</button>
+  </div>
+</form> 
+<a role="button" asp-area="" asp-controller="Cliente" asp-action="Index" class="btn btn-primary">Voltar</a>
+<a role="button" asp-area="" asp-controller="Cliente" asp-action="Apagar" class="btn btn-danger">Apagar</a>
